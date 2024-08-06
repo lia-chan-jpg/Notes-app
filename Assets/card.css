@@ -1,0 +1,26 @@
+
+.container-md{
+   margin-left:150px ;
+   margin-top: 50px;
+   
+}
+
+.mycard{
+  padding-bottom: 15px;
+  
+}
+  
+  .card{
+    /* 5px ->x-axis & y-axis
+    1px->blur
+    .5px->spread 
+    rgba-> shade of black */
+    box-shadow: 5px 5px 1px .5px rgba(0,0,0,.8); 
+    
+  }
+
+  
+
+
+
+  

@@ -1,0 +1,205 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+  font-family: 'Lexend',sans-serif;
+}
+
+h3,p{
+  font-family: 'Lexend',sans-serif;
+}
+
+.main-wrap{
+  width: 100%;
+  display: flex;
+
+}
+
+.main-wrap .main-head{
+width: 60px;
+height: 100vh;
+background: #6482AD ;
+overflow: hidden;
+transition: .3s ease-in-out;
+}
+
+.main-wrap .main-head.active{
+  width: 20%;
+}
+
+.main-wrap .main-head .main-nav{
+width: 100%;
+}
+
+.main-wrap .main-head .main-nav .navbar{
+  width: 100%
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .title{
+  padding: 15px 19px;
+  border-bottom: 1px solid #2f3e46;
+}
+
+.main-wrap .main-head.active .main-nav .navbar .navbar-nav .title{
+  padding: 15px 13px;
+
+}
+.main-wrap .main-head .main-nav .navbar .navbar-nav .title h3{
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 35px;
+  color: #f6f6f6;
+  position: relative
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .title h3 .title-text{
+  position: absolute;
+  left: 35px;
+   opacity: 0;  /*note opacity to 1 initally  */
+  transition: .2s ease;
+}
+
+.main-wrap .main-head.active .main-nav .navbar .navbar-nav .title h3 .title-text{
+  opacity: 1;
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list{
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item{
+ padding: 15px 10px;
+ list-style: none;
+ border-radius: 5px;
+ margin-bottom: 15px;
+ cursor: pointer;
+ transition: .2s ease-in-out;
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item:hover{
+  background: #2f3e46;
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  color: #fff;
+  position: relative;
+
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link i{
+  font-size: 20px;
+}
+
+.main-wrap .main-head .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link .link-text{
+  position: absolute;
+  top: 3px;
+  left: 35px;
+  opacity: 0;
+  transition: .2 ease-in-out;
+}
+
+.main-wrap .main-head.active .main-nav .navbar .navbar-nav .nav-list .nav-list-item .nav-link .link-text
+{
+  opacity: 1;
+}
+
+ .main-wrap .showcase{ 
+  width: 97%;
+  height: 100vh;
+  background: #E2DAD6 no-repeat; 
+  background-position: center;
+  background-size: cover;
+  position:relative;
+  transition: .3s ease-in-out;
+}
+
+.main-wrap .showcase:width{
+width:  80%;
+} 
+
+/* .main-wrap .showcase .overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); 
+
+} */
+
+
+.main-wrap .showcase .head{
+padding: 13px 25px;
+}
+
+
+.main-wrap .showcase .head .toggler{
+  display: inline-block;
+  background: transparent;
+  border: none;
+  outline: 0;
+  color: #fff;
+  padding: 10px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .2s ease;
+}
+
+.main-wrap .showcase .head .toggler :hover{
+background: #2f3e46;
+
+}
+
+.main-wrap .showcase .head .toggler i{
+  font-size: 20px;
+}
+
+/* puts hello in the middle */
+/* .main-wrap .showcase .content{
+  width: 100%;
+  padding: 150px 250px;
+  text-align: center;
+
+} */
+
+/* 
+.main-wrap .showcase .content .welcome{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.main-wrap .showcase .content .welcome .content-text{
+  width: 640px;
+}
+
+
+.main-wrap .showcase .content h3{
+font-size:  45px;
+font-weight: 500;
+line-height: 55px;
+color: #fff;
+margin-bottom: 15px;
+}
+ 
+.main-wrap .showcase .content p{
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 55px;
+  color: #fff;} */
+
+
+/* ul {
+  list-style-type: none;
+} */

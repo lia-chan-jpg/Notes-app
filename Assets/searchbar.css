@@ -1,0 +1,45 @@
+
+.search{
+  /* since were using padding in multiple places we use variable  */
+  --padding: 14px;
+  /* this the width of the container is determined the width of whats inside it  */
+  width: 400px;
+  display: flex;
+  /* alingnment of things inside the container*/
+  align-items: center;
+  padding: var(--padding);
+  border-radius: 60px;
+  background: #f6f6f6;
+  transition: background 0.25s;
+
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+ 
+}
+
+/* when the user focus on the search bar these styles apply after 0.25 seconds*/
+.search:focus-within{
+  background: #f1f1f1;
+}
+
+.search-input{
+  font-size: 16px;
+  font-family: 'Lexend',sans-serif;
+  color: #333333;
+  margin-left: var(--padding);
+  /* this makes the outline of the search bar blend with search*/
+  outline: none;
+  border: none;
+  background: transparent;
+  width: 300px;
+  
+} 
+
+/* this applies styling for the placeholder text and the icon within it */
+.search-input::placeholder, .search-icon{
+  /* very light black */
+  color: rgba(0,0,0,0.5);
+}
+
