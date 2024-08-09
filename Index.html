@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://kit.fontawesome.com/f142a1a926.js"
       crossorigin="anonymous"
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="./Assets/searchbar.css"/>
     <link rel="stylesheet" href="./Assets/sidebar.css" />
     <link rel="stylesheet" href="./Assets/card.css" />
+    <title>StrayNotes </title>
   </head>
   <body>
     <!-- Side bar -->
@@ -36,14 +38,14 @@
               </div>
               <ul class="nav-list">
                 <li class="nav-list-item">
-                  <a href="#" class="nav-link">
+                  <a href="#" class="nav-link" id="btn">
                     <i class="fa-solid fa-border-all"></i>
                     <span class="link-text">Create</span>
                   </a>
                 </li>
                 <li class="nav-list-item">
-                  <a href="#" class="nav-link">
-                    <i class="fa-solid fa-list"></i>
+                  <a href="#" class="nav-link" id="btn2">
+                    <i onclick="show()" class="fa-solid fa-list"></i>
                     <span class="link-text">Checklist</span>
                   </a>
                 </li>
@@ -90,6 +92,7 @@
           <div class="content">
             <div class="welcome">
               <div class="content-text">
+
                 <!-- search bar  -->
                 <form action="">
                   <div class="search">
@@ -106,61 +109,35 @@
 
 
 
-                 <!-- Cards  -->
-    <div class="container-md">
-      <div class="row">
-        <div class="col">
-          <div class="mycard">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Market list</h5>
-                <p class="card-text">pick up milk at the store</p>
-                <span class="material-symbols-outlined">delete</span>
-                <span class="material-symbols-outlined">update</span>
-              </div>
-            </div>
-          </div>
-        </div>
+                 <!-- Notes-->
+                   <div class="container">
+                    <div class="notes-container">
 
-        <div class="col">
-          <div class="mycard">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">pick up milk at the store.</p>
-                <span class="material-symbols-outlined">delete</span>
-                <span class="material-symbols-outlined">update</span>
-              </div>
-            </div>
-          </div>
-        </div>
+                    <!-- to-do list -->
+                    <div class="list-box" id="mylist">
+                      <div class="con">
+                        <input class="in-put" id="input-list" placeholder="add your text">
+                        <button class="but-ton" onclick="addtask()">Add</button>
+                      </div>
+                      <ul class="list-con" id="list-conatiner">
+                        <!-- <li class="checked">task 1</li>
+                        <li>task 1</li>
+                        <li> task 1</li> -->
+                      </ul>
+                     </div>
 
-        <div class="col">
-          <div class="mycard">
-            <div class="card" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">pick up milk at the store.</p>
-                <span class="material-symbols-outlined">delete</span>
-                <span class="material-symbols-outlined">update</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+                    </div>
+                  </div>
 
-
-
-
-
-
-              </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </section>
     </div>
+
+    
 
    
 

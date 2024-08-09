@@ -1,25 +1,130 @@
-
-.container-md{
+/* notes */
+.container{
    margin-left:150px ;
    margin-top: 50px;
    
 }
 
-.mycard{
-  padding-bottom: 15px;
-  
+.notes-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
 }
-  
-  .card{
+
+.input-box{
+  position: relative;
+  width: 250px; 
+  max-width: 500px;
+  min-height: 250px;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 20px 0;
+  outline: none;
+  border-radius: 5px;
     /* 5px ->x-axis & y-axis
     1px->blur
     .5px->spread 
     rgba-> shade of black */
-    box-shadow: 5px 5px 1px .5px rgba(0,0,0,.8); 
     
-  }
+  box-shadow: 5px 5px 1px .5px rgba(0,0,0,.8); 
+  transition: .5s ease-in-out;
+}
 
+  .input-box img{
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right:15px ;
+    cursor: pointer;
+  }
   
+/* To-do list */
+.list-box{
+  position: relative;
+  width: 100%; 
+  max-width: 500px;
+  min-height: 250px;
+  background: #fff;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 50px auto 20px;
+  outline: none;
+  border-radius: 5px;
+    /* 5px ->x-axis & y-axis
+    1px->blur
+    .5px->spread 
+    rgba-> shade of black */
+    
+  box-shadow: 5px 5px 1px .5px rgba(0,0,0,.8); 
+  transition: .5s ease-in-out;
+}
+
+
+.con{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.in-put{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+
+.but-ton{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #6482AD;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+ .list-con ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+
+
+ /* .list-con ul li::before {
+  content: "  ";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  top: 12px;
+  left :8px;
+
+} */
+
+ul{
+  list-style: none;
+}
+
+/* ul li.checked::before{
+background-image: url(./checked.png)
+} */
 
 
 
