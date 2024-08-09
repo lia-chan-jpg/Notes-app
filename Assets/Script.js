@@ -52,6 +52,34 @@ function addtask(){
         let li = document.createElement("li")
         li.innerHTML = inputlist.value
         listconatiner.appendChild(li)
+
+        let span = document.createElement("span")
+        span.innerHTML="\u00d7"
+        li.appendChild(span);
     }
+    inputlist.value=""
 }
 
+listconatiner.addEventListener("click", function(e){
+    if(e.target.tagName ==="LI"){
+        e.target.classList.toggle("checked")
+    }
+    else if (e.target.tagname ==="SPAN"){
+        e.target.parentElement.remove();
+    }
+})
+
+//show and hide
+let todolist= document.querySelector(".list-box")
+todolist.style.display="none"
+
+let show=true
+function showtodo(){
+if(show){
+    todolist.style.display="block"
+    show=false
+}else{
+    todolist.style.display="none"
+    show=true
+}
+} 

@@ -96,7 +96,7 @@
  .list-con ul li{
   list-style: none;
   font-size: 17px;
-  padding: 12px 8px 50px;
+  padding: 12px 8px 5px;
   user-select: none;
   cursor: pointer;
   position: relative;
@@ -108,13 +108,17 @@
 }
 
 
- /* .list-con ul li::before {
+ /* .list-con ul li::before{
   content: "  ";
   position: absolute;
   height: 28px;
   width: 28px;
+  border-radius: 50%;
+  background-image: url(./unchecked.png);
+  background-size: cover;
+  background-position: center;
   top: 12px;
-  left :8px;
+  left: 8px
 
 } */
 
@@ -122,6 +126,24 @@ ul{
   list-style: none;
 }
 
+
+.list-con ul li span{
+position: absolute;
+right: 0;
+top: 5px;
+width: 40px;
+height: 40px;
+font-size: 22px;
+color: #555;
+line-height: 40px;
+text-align: center;
+border-radius: 50%;
+
+}
+
+.list-con li span:hover{
+  background: #edeef0;
+}
 /* ul li.checked::before{
 background-image: url(./checked.png)
 } */
