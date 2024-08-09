@@ -50,12 +50,13 @@ function addtask(){
         alert("You havent added a task")
     }else{
         let li = document.createElement("li")
+        li.className="list"
         li.innerHTML = inputlist.value
         listconatiner.appendChild(li)
 
-        let span = document.createElement("span")
-        span.innerHTML="\u00d7"
-        li.appendChild(span);
+        let img=document.createElement("img")
+        img.src ="Assets/delete.png"
+        li.appendChild(img);
     }
     inputlist.value=""
 }
@@ -64,12 +65,9 @@ listconatiner.addEventListener("click", function(e){
     if(e.target.tagName ==="LI"){
         e.target.classList.toggle("checked")
     }
-    else if (e.target.tagname ==="SPAN"){
-        e.target.parentElement.remove();
-    }
 })
 
-//show and hide
+//show and hide todolist
 let todolist= document.querySelector(".list-box")
 todolist.style.display="none"
 

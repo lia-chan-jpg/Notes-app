@@ -13,8 +13,14 @@ a{
   font-family: 'Lexend',sans-serif;
 }
 
-h3,p{
+p{
   font-family: 'Lexend',sans-serif;
+}
+
+h3{
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .main-wrap{
@@ -52,6 +58,7 @@ width: 100%;
   padding: 15px 13px;
 
 }
+
 .main-wrap .main-head .main-nav .navbar .navbar-nav .title h3{
   font-size: 25px;
   font-weight: 500;
